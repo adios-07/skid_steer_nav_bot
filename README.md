@@ -86,7 +86,7 @@ config/joystick.yaml
 
 Launch with joystick:
 ```bash
-ros2 launch skid_steer_nav joystick.launch.py
+Joy Node runs by default
 ```
 
 ---
