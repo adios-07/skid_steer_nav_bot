@@ -33,7 +33,7 @@ A skid-steer robot simulation built with **ROS2 Jazzy** and **Gazebo Harmonic**,
 | ROS2 | Jazzy |
 | Gazebo | Harmonic |
 | Nav2 | (ros-jazzy-nav2-bringup) |
-| teleop_twist_keyboard | Optional – keyboard control |
+| teleop_twist_joy | Optional – joystick control |
 
 Install dependencies:
 ```bash
