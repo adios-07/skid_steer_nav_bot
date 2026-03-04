@@ -55,7 +55,7 @@ sudo apt install -y \
 ```bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone <your-repo-url>
+git clone https://github.com/adios-07/skid_steer_nav_bot.git
 cd ~/ros2_ws
 colcon build --packages-select skid_steer_nav
 source install/setup.bash
