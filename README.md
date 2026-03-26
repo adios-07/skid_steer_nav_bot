@@ -2,6 +2,24 @@
 
 A skid-steer robot simulation built with **ROS2 Jazzy** and **Gazebo Harmonic**, featuring accurate odometry and full autonomous navigation via Nav2.
 
+> 📄 This repository contains the **drive simulation component** of our Robocon 2026 submission. For the full technical report, see the submission PDF below.
+
+---
+
+## 📋 Robocon 2026 Submission
+
+<p align="center">
+  <a href="rbcn-submission.pdf">
+    <img src="Demos/pdf-front.png" width="60%" alt="Robocon 2026 Submission PDF Preview" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="rbcn-submission.pdf">📄 View Full Submission Report (rbcn-submission.pdf)</a>
+</p>
+
+> ⚠️ **Scope Note:** This repo covers only the **drive train simulation** — skid-steer odometry, Gazebo integration, and Nav2 autonomous navigation. Other subsystems (mechanical design, electronics, arena interaction) are documented in the report above.
+
 ---
 
 ## 📸 Demo
@@ -131,7 +149,8 @@ SKID_STEER_NAV/
 ├── Demos/
 │   ├── DemoNav.mp4
 │   ├── img1.png
-│   └── img2.png
+│   ├── img2.png
+│   └── pdf-front.png                 # Submission PDF preview
 │
 ├── description/                      # Robot model (URDF/Xacro)
 │   ├── robot.urdf.xacro
@@ -157,6 +176,7 @@ SKID_STEER_NAV/
 │   ├── robocon.world
 │   └── empty.world
 │
+├── rbcn-submission.pdf               # Robocon 2026 full submission report
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md
@@ -176,6 +196,7 @@ Tune planner, controller, and costmap parameters here to adjust navigation behav
 
 ## 📝 Notes
 
+- This simulation was developed as part of the **DD Robocon 2026** submission, specifically to model and validate the robot's drive system behaviour in the competition arena
 - The robot uses a **skid-steer drive** configuration managed via `ros2_control`
 - Sensor and Gazebo topics are bridged to ROS2 using the `gz_bridge` config
 - Odometry is published accurately and consumed directly by Nav2 for localization
